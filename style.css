@@ -1,0 +1,119 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url("img/back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 4s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out ;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("img/back1.jpg");
+    }
+    20%{
+        background-image: url("img/back2.jpg");
+    }
+    40%{
+        background-image: url("img/back3.jpg");
+    }
+    60%{
+        background-image: url("img/back4.jpg");
+    }
+    80%{
+        background-image: url("img/back5.jpg");
+    }
+    100%{
+        background-image: url("img/back6.jpg");
+    }
+}
+#data ul{
+    list-style: none;
+    margin-top: 50px;
+}
+#data ul li{
+    display: inline-block;
+    padding:0;
+    /* margin: 10px; */
+    margin-bottom: 100px;
+
+
+}
+#data ul li a {
+    font-size:50px;
+    background-color: #fff;
+    padding:20px;
+    padding-bottom: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* clock */
+#clock {
+        color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    float: right;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    font-size: 70px;
+    font-weight: 300;
+  }
+#data{
+    width: 55%;
+    margin:10px;
+}
+  @media only screen and (max-width: 800px) {
+    body {
+      color: lightblue;
+    }
+    #clock{
+        width: 100%;
+        float: none;
+    }
+    #data{
+        width: 100%;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    #data ul li {
+        width: 30%;
+        margin-bottom: 100px;
+    }
+    
+  }
+
+
+
+#search{
+    width: 60%;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+  }
+#search:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
